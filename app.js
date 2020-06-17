@@ -70,13 +70,13 @@ app.use("/campgrounds",campgroundRoutes);
 app.use("/campgrounds/:id/comments", commentRoutes);
 
 
-// const PORT = process.env.PORT || 3000;
-// app.listen(PORT, () => {
-//     console.log(`Our app is running on port ${ PORT }`);
-// });
-
-
-
-app.listen(3000, process.env.IP, function(){
-   console.log("The YelpCamp Server Has Started!");
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
 });
+
+
+
+// app.listen(3000, process.env.IP, function(){
+//    console.log("The YelpCamp Server Has Started!");
+// });
